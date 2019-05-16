@@ -1,6 +1,7 @@
 #include <QCoreApplication>
 #include <iostream>
 using namespace std;
+//插入排序
 
 int main(int argc, char *argv[])
 {
