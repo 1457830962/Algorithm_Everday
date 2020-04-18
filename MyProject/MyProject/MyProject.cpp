@@ -2,14 +2,22 @@
 //
 #include <iostream>
 #include "BinarySearch.h"
+#include "FullPermutation/measuremethod.h"
 
 
 int main()
 {
 	/**********************简单的二分查找应用*********************/
-	CBinarySearch method;
-	method.Link_BinarySearch();
+	//CBinarySearch method;
+	//method.Link_BinarySearch();
 	/************************************************************/
+
+	MeasureMethod method;
+	char str[7] = { 'a','l','i','b','a','b','a' };
+	int len = strlen(str);
+	//    char str1[7]={'a','l','i','b','a','b','a'};
+	method.full_permutation(str, 0, 6);
+	printf("count=%d", method.count);
 
 	system("pause");
 }
