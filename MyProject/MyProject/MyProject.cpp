@@ -15,6 +15,8 @@ int main()
 	MeasureMethod method;
 	char str[7] = { 'a','l','i','b','a','b','a' };
 	int len = strlen(str);
+	int *p = &len;
+	len = sizeof(p);
 	//    char str1[7]={'a','l','i','b','a','b','a'};
 	method.full_permutation(str, 0, 6);
 	printf("count=%d", method.count);

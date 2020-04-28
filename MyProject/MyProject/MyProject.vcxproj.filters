@@ -25,6 +25,12 @@
     <Filter Include="Source Files\FullPermutation">
       <UniqueIdentifier>{4eadcb45-246b-46ec-8cc6-cfeb1f98c085}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Pointer">
+      <UniqueIdentifier>{63a87c22-9e9b-44d1-af25-796c140906e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Pointer">
+      <UniqueIdentifier>{f8f652a5-4a4f-491d-9802-a6e5116487bd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyProject.cpp">
@@ -36,6 +42,9 @@
     <ClCompile Include="FullPermutation\measuremethod.cpp">
       <Filter>Source Files\FullPermutation</Filter>
     </ClCompile>
+    <ClCompile Include="Pointer\Pointer.cpp">
+      <Filter>Source Files\Pointer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearch.h">
@@ -43,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="FullPermutation\measuremethod.h">
       <Filter>Header Files\FullPermutation</Filter>
+    </ClInclude>
+    <ClInclude Include="Pointer\Pointer.h">
+      <Filter>Header Files\Pointer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

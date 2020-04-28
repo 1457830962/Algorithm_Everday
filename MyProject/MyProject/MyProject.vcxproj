@@ -154,10 +154,12 @@
     <ClCompile Include="BinarySearch.cpp" />
     <ClCompile Include="FullPermutation\measuremethod.cpp" />
     <ClCompile Include="MyProject.cpp" />
+    <ClCompile Include="Pointer\Pointer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="FullPermutation\measuremethod.h" />
+    <ClInclude Include="Pointer\Pointer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
