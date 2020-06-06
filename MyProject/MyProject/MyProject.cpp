@@ -4,23 +4,43 @@
 #include "BinarySearch.h"
 #include "FullPermutation/measuremethod.h"
 
+#include "log4cxx/logger.h"
+#include "log4cxx/propertyconfigurator.h"
+
+using namespace log4cxx;
+
 
 int main()
 {
+	log4cxx::PropertyConfigurator::configure("./log4cxx/log4cxx(everyday).properties");//加载日志配置
+
 	/**********************简单的二分查找应用*********************/
-	//CBinarySearch method;
-	//method.Link_BinarySearch();
+#if 0
+	CBinarySearch method;
+	method.Link_BinarySearch();
+#endif
 	/************************************************************/
 
+	/***************************全排列应用************************/
+#if 1
 	MeasureMethod method;
 	char str[7] = { 'a','l','i','b','a','b','a' };
 	int len = strlen(str);
 	int *p = &len;
 	len = sizeof(p);
-	//    char str1[7]={'a','l','i','b','a','b','a'};
+
+	for (int i = 0; i < 100; i++)
+	{
+		i = i;
+	}
 	method.full_permutation(str, 0, 6);
 	printf("count=%d", method.count);
+#endif
+	/************************************************************/
 
+
+	LOG4CXX_INFO(log4cxx::Logger::getLogger("main()"), "end...");
+	LOG4CXX_ERROR(log4cxx::Logger::getLogger("main()"), "end...");
 	system("pause");
 }
 

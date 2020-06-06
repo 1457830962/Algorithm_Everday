@@ -1,4 +1,5 @@
-#pragma once
+#ifndef BINARYSEARCH_H
+#define BINARYSEARCH_H
 
 class CBinarySearch
 {
@@ -12,3 +13,4 @@ private:
 	bool bSearchAgain;
 
 };
+#endif
