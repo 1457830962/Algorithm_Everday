@@ -15,6 +15,8 @@ public:
     //Second way
     void PermutationHelp(vector<string> &ans, int k, string str); //遍历第k位的所有可能
     vector<string>  Permutation(string str);
+
+	void Execute();
 };
 
 
